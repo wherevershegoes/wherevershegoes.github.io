@@ -4,7 +4,21 @@ body, h1, h2, h3, p, ul, ol, li{
 	margin: 0
 }
 
-
+#Logo{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#Logo a{
+  font-family: 'Raleway', sans-serif;
+  font-color: #6A060A;
+  font-size: 100px;
+  font-weight: lighter;
+ margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 body {
 	background-color: #FFF;
   font-family: 'Raleway', sans-serif;
