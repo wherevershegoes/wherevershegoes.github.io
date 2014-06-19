@@ -1,0 +1,262 @@
+
+/*CSS Reset*/
+body, h1, h2, h3, p, ul, ol, li, footer{
+	padding: 0;
+	margin: 0;
+}
+body { 
+	background: #100000; 
+	font-size: 1.5rem; }
+#Logo{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#Logo a{
+  font-family: 'Raleway', sans-serif;
+  font-color: #6A060A;
+  font-size: 100px;
+  font-weight: lighter;
+ margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body {
+	background-color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+a:link {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+a:visited {
+    color: #6A060A;
+}
+
+a:hover {
+   color: #0F0F0F;
+   
+}
+a:active{
+  font-size: 120%;
+}
+
+.container {
+	width: 1000px;
+	background-color: #FFF;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+  padding: 15px;
+
+}
+
+nav{
+	position: relative;
+	left: 0;
+	top: 10px;
+	margin: 0 auto;
+	width: 410px;
+	font-family: 'Raleway', sans-serif;
+
+	
+}
+
+
+nav ul li{
+	list-style: none;
+	position: relative;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+  font-size: 75%;
+  
+}
+
+nav ul li a{
+	color: #303239;
+	background: #FFF;
+	/* advantage of doing padding on the anchor tag
+	is that the anchor tag space becomes clickable as opposed
+	to just the words*/
+	padding: 10px 30px;
+  float: left;
+	
+}
+nav ul li:first-child a{
+	border-left: none;
+}
+/*sub level nav*/
+nav ul li ul{
+	position: absolute;
+	top: 30px;
+	left: -9999px;
+}
+
+
+nav ul li a:hover{
+	color: #000;
+
+
+}
+
+nav ul li ul li{
+	float: none;
+
+}
+
+nav ul li:hover ul{
+	left: 0px;
+}
+nav ul li ul li a{
+	width: 90px;
+	display: inline-block;
+	border: none;
+}
+
+
+div#carousel { 
+  -webkit-perspective: 1200px; 
+  height: 400px;
+  background: #100000; 
+  padding-top: 10%; 
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden;
+
+
+}
+div#gallery { 
+	-webkit-perspective: 1200px; 
+	margin-top: 100px;
+	height: 120px;
+	margin-bottom: 300px;
+}
+figure#spinner { 
+	-webkit-transform-style: preserve-3d; 
+	-webkit-transform-origin: 50% 50% -500px; 
+	transition: 1s; 
+	height: 300px;
+}
+figure#spinner img { width: 40%; 
+	position: absolute; 
+	max-width: 325px;
+	left: 30%; 
+	-webkit-transform-origin: 50% 50% -500px; 
+	outline: 1px solid transparent; }
+
+figure#spinner img:nth-child(1) { 
+	-webkit-transform: rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { 
+	-webkit-transform: rotateY(-45deg); 
+}
+figure#spinner img:nth-child(3) { 
+	-webkit-transform: rotateY(-90deg); 
+}
+figure#spinner img:nth-child(4) { 
+	-webkit-transform: rotateY(-135deg); 
+}
+figure#spinner img:nth-child(5) { 
+	-webkit-transform: rotateY(-180deg); 
+}
+figure#spinner img:nth-child(6) { 
+	-webkit-transform: rotateY(-225deg); 
+}
+figure#spinner img:nth-child(7) { 
+	-webkit-transform: rotateY(-270deg); 
+}
+figure#spinner img:nth-child(8) { 
+	-webkit-transform: rotateY(-315deg); 
+}
+
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  -webkit-transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0;
+  float: left;
+   }
+   div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  -webkit-transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0;
+  float: left;
+   }
+div#carousel ~ span:hover { 
+	color: #888; 
+	cursor: pointer; 
+float: right;
+}
+
+
+
+
+#SocialLinks{
+  position: relative;
+  float: right;
+  padding-top: 100px;
+
+}
+
+#SocialLinks li{
+  float: left;
+  list-style: none;
+}
+#SocialLinks li a{
+  background: url("../images/icons.png");
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  text-indent: -9999px;
+}
+#SocialLinks li:first-child a:hover{
+  background-position: 0 -55px;
+}
+#SocialLinks li:nth-child(2) a{
+  background-position: -55px 0;
+}
+#SocialLinks li:nth-child(2) a:hover{
+  background-position: -55px -55px;
+}
+#SocialLinks li:nth-child(3) a{
+  width: 60px;
+  background-position: -110px 0;
+}
+#SocialLinks li:nth-child(3) a:hover{
+  background-position: -110px -55px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
+
+
+
+

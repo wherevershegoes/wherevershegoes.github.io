@@ -1,0 +1,291 @@
+/*CSS Reset*/
+body, h1, h2, h3, p, ul, ol, li, footer{
+	padding: 0;
+	margin: 0;
+}
+
+#Logo{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#Logo a{
+  font-family: 'Raleway', sans-serif;
+  font-color: #6A060A;
+  font-size: 100px;
+  font-weight: lighter;
+ margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body {
+	background-color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+a:link {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+a:visited {
+    color: #6A060A;
+}
+
+a:hover {
+   color: #0F0F0F;
+   
+}
+a:active{
+  font-size: 120%;
+}
+
+.container {
+	width: 1000px;
+	background-color: #FFF;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+  padding: 15px;
+
+}
+
+nav{
+	position: relative;
+	left: 0;
+	top: 10px;
+	margin: 0 auto;
+	width: 410px;
+	font-family: 'Raleway', sans-serif;
+
+	
+}
+
+
+nav ul li{
+	list-style: none;
+	position: relative;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+  font-size: 75%;
+  
+}
+
+nav ul li a{
+	color: #303239;
+	background: #FFF;
+	/* advantage of doing padding on the anchor tag
+	is that the anchor tag space becomes clickable as opposed
+	to just the words*/
+	padding: 10px 40px;
+  float: left;
+	
+}
+nav ul li:first-child a{
+	border-left: none;
+}
+/*sub level nav*/
+nav ul li ul{
+	position: absolute;
+	top: 30px;
+	left: -9999px;
+}
+
+
+nav ul li a:hover{
+	color: #000;
+
+
+}
+
+nav ul li ul li{
+	float: none;
+
+}
+
+nav ul li:hover ul{
+	left: 0px;
+}
+nav ul li ul li a{
+	width: 90px;
+	display: inline-block;
+	border: none;
+}
+
+
+
+#imageContainer{
+
+height:400px;
+ text-align: center;
+ margin: 1em 0;
+ margin-right: auto;
+ margin-left: auto;
+padding-top: 125px;
+}
+.helper{
+    height: 100%;
+    vertical-align: top; 
+    background-color: blue;
+}
+
+
+#image{
+  vertical-align: middle;
+
+}
+
+#frank{
+	position:relative;
+	text-align: center;
+	width: 150px;
+	font-color: #6A060A;
+	padding: 10px 5px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 15px;
+  	font-weight: lighter;
+}
+
+
+.menu {
+    
+position:relative;
+text-align: center;
+width: 150px;
+  /* advantage of doing padding on the anchor tag
+  is that the anchor tag space becomes clickable as opposed
+  to just the words*/
+padding: 10px 20px;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  
+}
+
+.menu ul{
+  list-style: none;
+  margin:0 ;
+  padding: 0;
+
+}
+.menu ul li{
+	font-color: #6A060A;
+  display: block;
+  padding: 0px;
+  margin: 0;
+}
+.main_menu ul li a{
+ color:#FFF;
+  display:block;
+  text-decoration:none;
+  padding:0 25px;
+}
+.main_menu ul li a:hover
+{
+  background:#FFF;
+  color:#6D2A47;
+}
+/* SubMenu*/
+.menu ul li ul{
+  position: relative;
+  width: auto;
+  left: -9999px;
+  top:2px;
+  padding: 0px;
+  margin: 0;
+
+
+}
+
+
+.menu ul li:hover ul{
+  position: relative;
+  margin: 0;
+  padding: 0px;
+  
+  left: 0px;
+    text-indent: 0px;
+}
+.menu ul li:hover li
+{
+  float: none;
+  list-style:none;
+  margin:0px;
+
+}
+
+.menu ul li:hover li{
+  border-top: 1px solid #000;
+}
+
+
+.main_menu ul li li a:hover
+{
+  color:#000;
+}
+
+
+
+#contactInfo{
+  position: relative;
+  float: left;
+  margin-top: 90px;
+}
+
+
+
+#SocialLinks{
+  position: relative;
+  float: right;
+  padding-top: 60px;
+  padding-left: 0;
+
+}
+
+#SocialLinks li{
+  float: left;
+  list-style: none;
+}
+#SocialLinks li a{
+  background: url("../images/icons.png");
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  text-indent: -9999px;
+}
+#SocialLinks li:first-child a:hover{
+  background-position: 0 -55px;
+}
+#SocialLinks li:nth-child(2) a{
+  background-position: -55px 0;
+}
+#SocialLinks li:nth-child(2) a:hover{
+  background-position: -55px -55px;
+}
+#SocialLinks li:nth-child(3) a{
+  width: 60px;
+  background-position: -110px 0;
+}
+#SocialLinks li:nth-child(3) a:hover{
+  background-position: -110px -55px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
+
