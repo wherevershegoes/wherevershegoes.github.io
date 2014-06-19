@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gallery</title>
+			<link rel="stylesheet" href="css/reset.css">
+			<link rel="stylesheet" href="css/StylesGallery.css"/>
+	
+	</head>
+
+<body>
+	<div id="container">
+	<H1 id="Logo"><a title="back to home" href="index.html">Mary Colette</a></H1>
+		<nav>
+			<ul>
+				<li><a href="index.html">home</a></li>
+
+				<li> <a href="MyStory.html">my story</a> </li>
+				
+				<li><a href="booking.html">booking</a></li>
+				
+			</ul>
+		</nav>
+	
+</div>
+
+
+	<div id="gallery">
+		<figure id="spinner">
+		<img src="images/bass.jpg" alt="">
+		<img src="images/IMG_3660.jpg" alt="">
+		<img src="images/IMG_4761.jpg" alt="">
+		<img src="images/sun.jpg" alt="">
+		<img src="images/concert.jpg" alt="">
+		<img src="images/IMG_6340.jpg" alt="">
+		<img src="images/IMG_6674.jpg" alt="">
+		<img src="images/street.jpg" alt="">
+		</figure>
+	</div>
+
+</body>
+<footer>
+
+<ul Id="SocialLinks">
+		<li><a href="http//:www.facebook.com">facebook</a></li>
+		<li><a href="http://www.twitter.com">twitter</a></li>
+		<li><a href="http://www.linkedin.com">linkedin</a></li>
+	</ul>
+<a href="#" style="float: left" onclick="galleryspin('-')">&#x25C0;</a>
+<a href="#" style="float: right" onclick="galleryspin('')">&#x25B6;</a>
+	<script type="text/javascript">
+
+			var angle = 0;
+
+			function galleryspin(sign) {
+				spinner = document.querySelector("#spinner");
+				if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+				spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -webkit-transform: rotateY("+ angle +"deg);");
+			}
+
+
+		</script>
+</footer>
+</html>
