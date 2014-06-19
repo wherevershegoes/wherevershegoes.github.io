@@ -24,21 +24,6 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: lighter;
 }
-#Logo{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-#Logo a{
-  font-family: 'Raleway', sans-serif;
-  font-color: #6A060A;
-  font-size: 100px;
-  font-weight: lighter;
- margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 a:link {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
